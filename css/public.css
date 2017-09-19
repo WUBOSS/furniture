@@ -20,6 +20,10 @@ img {
 
     border: none;
 }
+ul li,
+ol li {
+    list-style: none;
+}
 
 input,
 textarea,
@@ -115,4 +119,53 @@ button {
 .head div.btn a{
     float: left;
     margin: 0 10px;
+}
+/*头部二维码*/
+.head div.btn p {
+    display: none;
+}
+.head div.btn p a{
+    width:74px;
+    height: 74px;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    right: 10px;
+    padding: 2px;
+    z-index: 10;
+    border: 1px solid #A10000;
+}
+.head div.btn p a img {
+    width: 100%;
+}
+.head div.btn p a:before {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #A10000;
+    border-left: 5px solid transparent;
+}
+.head ul{
+
+    margin-left: 18%;
+    line-height: 50px;
+}
+.head ul li{
+    float: left;
+    padding:0 20px;
+}
+.head ul li>a{
+    color: #262626;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+}
+.head ul li>a:hover{
+    color: #A10000;
 }
